@@ -84,6 +84,7 @@ menu "Compressors and decompressors"
 endmenu
 
 menu "Debugging, profiling and benchmark"
+	source "package/hello/Config.in"
 	source "package/babeltrace2/Config.in"
 	source "package/bcc/Config.in"
 	source "package/blktrace/Config.in"
