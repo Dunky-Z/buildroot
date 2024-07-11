@@ -146,6 +146,20 @@ endif
 
 comment "Legacy options removed in 2024.08"
 
+config BR2_PACKAGE_ONEVPL_INTEL_GPU
+	bool "onevpl-intel-gpu has been renamed"
+	select BR2_LEGACY
+	select BR2_PACKAGE_INTEL_VPL_GPU_RT
+	help
+	  The onevpl-intel-gpu package has been renamed to
+	  intel-vpl-gpu-rt.
+
+config BR2_PACKAGE_CGIC
+	bool "cgic has been removed"
+	select BR2_LEGACY
+	help
+	  the cgic upstream no longer exists.
+
 config BR2_PACKAGE_VERSAL_FIRMWARE
 	bool "versal-firmware has been replaced by xilinx-prebuilt"
 	select BR2_TARGET_XILINX_PREBUILT
